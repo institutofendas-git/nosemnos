@@ -1,222 +1,545 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Aula aberta e gratuita · Nós em Nós com Ilo &amp; Mari</title>
-<meta name="description" content="Por que vocês brigam sempre pelas mesmas coisas? Aula ao vivo e gratuita com Ilo & Mari, terça, 17 de novembro, às 19h, pelo Google Meet.">
-<meta name="theme-color" content="#464A45">
-
+<title>Nós em Nós · Ilo e Mari</title>
+<meta name="description" content="Podcast, e-books e aulas de Ilo e Mari, psicólogos que atendem casais. Tem nó que aperta. Tem nó que segura a gente junto.">
+<link rel="canonical" href="https://soltandonos.com.br/">
+<link rel="icon" href="assets/img/simbolo-nos.webp" type="image/webp">
+<meta name="theme-color" content="#FFFEF4">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:title" content="Por que vocês brigam sempre pelas mesmas coisas?">
-<meta property="og:description" content="Aula aberta e gratuita com Ilo & Mari · 17/11, terça, 19h, ao vivo pelo Google Meet.">
-<link rel="canonical" href="https://soltandonos.com.br/">
-<meta property="og:url" content="https://soltandonos.com.br/">
 <meta property="og:site_name" content="Nós em Nós">
-<meta property="og:image" content="https://soltandonos.com.br/assets/img/compartilhar-aula.jpg">
-<meta property="og:image:secure_url" content="https://soltandonos.com.br/assets/img/compartilhar-aula.jpg">
-<meta property="og:image:type" content="image/jpeg">
+<meta property="og:title" content="Nós em Nós · Ilo e Mari">
+<meta property="og:description" content="Tem nó que aperta. Tem nó que segura a gente junto. Podcast, e-books e aulas de Ilo e Mari, psicólogos que atendem casais.">
+<meta property="og:url" content="https://soltandonos.com.br/">
+<meta property="og:image" content="https://soltandonos.com.br/assets/inicio/compartilhar.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Aula aberta e gratuita com Ilo e Mari: Por que vocês brigam sempre pelas mesmas coisas? 17/11, terça, 19h, Google Meet">
-<meta name="twitter:image" content="https://soltandonos.com.br/assets/img/compartilhar-aula.jpg">
 <meta name="twitter:card" content="summary_large_image">
-
-<link rel="icon" href="assets/img/simbolo-nos.webp" type="image/webp">
 <link rel="preload" href="assets/fonts/chinchilla.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/inicio/ilo-e-mari.webp" as="image" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..700&amp;family=Nunito+Sans:opsz,wght@6..12,400..700&amp;display=swap">
-<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..500&family=Nunito+Sans:opsz,wght@6..12,400..800&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:"Chinchilla";src:url(assets/fonts/chinchilla.woff2) format("woff2");font-display:swap}
+:root{color-scheme:light;--vinho:#8F0835;--rosa:#C75077;--creme:#F1E8C7;--off:#FFFEF4;--grafite:#464A45;--oliva:#9CA764;--verde:#BAD797;--tinta:#2E312D;--suave:#5C605A;--pf:"Playfair Display",Georgia,serif;--hand:"Chinchilla","Playfair Display",cursive}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--off);color:var(--tinta);font:17px/1.65 "Nunito Sans",system-ui,sans-serif;overflow-x:clip}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3{font-family:var(--pf);font-weight:500;line-height:1.08;margin:0;text-wrap:balance}
+h1 b,h2 b,p b{font-weight:800}
+p{margin:0 0 1em}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+a:focus-visible,button:focus-visible{outline:3px solid var(--rosa);outline-offset:3px}
+.hand{font-family:var(--hand);font-weight:400;line-height:1.1}
+.band{padding:clamp(56px,8vw,112px) max(5vw,20px);position:relative;overflow:hidden}
+.wrap{max-width:1140px;margin:0 auto;position:relative}
+.kick{font-family:var(--hand);font-size:24px;color:var(--vinho);margin-bottom:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:13px 26px;border-radius:999px;background:var(--vinho);color:var(--off);font-weight:800;font-size:16px;text-decoration:none;border:0;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:#6F0629}
+.btn.ghost{background:transparent;color:var(--vinho);box-shadow:inset 0 0 0 2px var(--vinho)}
+.btn.ghost:hover{background:var(--vinho);color:var(--off)}
+.btn.light{background:var(--off);color:var(--vinho)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.12s}.d2{transition-delay:.24s}.d3{transition-delay:.36s}
+.giant{position:absolute;font-family:var(--hand);color:var(--rosa);opacity:.17;line-height:.8;white-space:nowrap;pointer-events:none;user-select:none}
+
+/* faixa e topo */
+.aviso{display:block;background:var(--grafite);color:var(--off);text-align:center;padding:10px 16px;font-weight:700;font-size:15px;text-decoration:none}
+.aviso span{color:var(--verde)}
+.aviso:hover{background:#3a3e39}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px max(5vw,20px);position:relative;z-index:4}
+.bar .mk{font-family:var(--hand);font-size:27px;color:var(--grafite);text-decoration:none}
+.bar .mk span{color:var(--vinho)}
+.bar nav{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+.bar nav a{font-weight:700;font-size:15px;text-decoration:none;padding:10px 12px;border-radius:999px;color:var(--grafite)}
+.bar nav a:hover{background:var(--creme)}
+
+/* primeira tela */
+.hero{background:var(--off);position:relative;overflow:hidden}
+.hero .g1{font-size:clamp(170px,30vw,400px);top:30px;left:-.15em}
+.hero .g2{font-size:clamp(150px,27vw,360px);bottom:-.2em;right:-.12em}
+.hero .in{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(24px,5vw,64px);align-items:center;max-width:1140px;margin:0 auto;padding:clamp(12px,3vw,40px) max(5vw,20px) clamp(56px,8vw,100px)}
+.hero h1{font-size:clamp(40px,6.2vw,72px);color:var(--grafite);letter-spacing:-.4px}
+.hero h1 b{color:var(--vinho)}
+.hero .sub{color:var(--suave);max-width:520px;margin:22px 0 28px;font-size:clamp(17px,2vw,19px)}
+.duo{position:relative;aspect-ratio:1;max-width:470px;width:100%;margin:0 auto}
+.duo::before{content:"";position:absolute;inset:6%;border-radius:50%;background:var(--verde);transform:scale(.7);transition:transform 1.1s cubic-bezier(.2,.8,.2,1)}
+.duo.open::before{transform:scale(1)}
+.duo .ph{position:absolute;left:14%;right:14%;bottom:0;width:72%;-webkit-mask-image:linear-gradient(to bottom,#000 62%,transparent 94%);mask-image:linear-gradient(to bottom,#000 62%,transparent 94%);opacity:0;transform:translateY(30px);transition:opacity 1s .2s,transform 1s .2s cubic-bezier(.2,.8,.2,1)}
+.duo.open .ph{opacity:1;transform:none}
+.duo .knot{position:absolute;width:38%;right:-4%;top:4%;animation:sway 7s ease-in-out infinite;transform-origin:50% 50%}
+@keyframes sway{50%{transform:rotate(-10deg) translateY(-6px)}}
+
+/* podcast agora */
+.pod{background:var(--grafite);color:var(--off);border-radius:44px 44px 0 0;margin-top:-34px;z-index:3}
+.pod .kick{color:var(--verde)}
+.pod h2{font-size:clamp(32px,4.4vw,50px);max-width:760px}
+.pod h2 b{color:var(--verde)}
+.pod .lead{color:var(--creme);max-width:620px;margin:16px 0 0;font-size:18px}
+.status{display:inline-flex;align-items:center;gap:10px;margin-top:26px;background:rgba(255,254,244,.08);border-radius:999px;padding:8px 16px 8px 12px;font-weight:700;font-size:15px;color:var(--off)}
+.status i{flex:none;width:10px;height:10px;border-radius:50%;background:var(--verde);box-shadow:0 0 0 0 rgba(186,215,151,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(186,215,151,0)}100%{box-shadow:0 0 0 0 rgba(186,215,151,0)}}
+.eps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:30px}
+.ep{background:var(--off);color:var(--tinta);border-radius:24px;padding:22px 22px 18px;display:flex;flex-direction:column;gap:10px;text-decoration:none;box-shadow:0 18px 30px -22px rgba(0,0,0,.6);transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s}
+.ep:hover{transform:translateY(-6px);box-shadow:0 26px 40px -24px rgba(0,0,0,.7)}
+.ep .ic{width:64px;height:64px;border-radius:20px;display:grid;place-items:center;margin-bottom:4px}
+.ep .ic svg{width:38px;height:38px}
+.ep:nth-child(1) .ic{background:#F6DCE4}.ep:nth-child(2) .ic{background:#E8F1DC}.ep:nth-child(3) .ic{background:var(--creme)}
+.ep .n{font-family:var(--hand);font-size:18px;color:var(--rosa)}
+.ep h3{font-size:23px;color:var(--grafite)}
+.ep p{color:var(--suave);font-size:15px;margin:0;flex:1}
+.ep .go{display:flex;align-items:center;justify-content:space-between;margin-top:12px;padding-top:14px;border-top:1px solid var(--creme);font-weight:800;font-size:15px;color:var(--vinho)}
+.ep .go b{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--vinho);transition:transform .3s}
+.ep:hover .go b{transform:scale(1.1)}
+.ep.big{grid-column:1/-1;flex-direction:row;align-items:center;gap:22px}
+.ep.big h3{font-size:clamp(24px,3vw,32px)}
+.ep.big .play{flex:none;width:72px;height:72px;border-radius:50%;background:var(--vinho);display:grid;place-items:center}
+.listen{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.listen a{display:inline-flex;align-items:center;gap:10px;min-height:50px;padding:12px 22px;border-radius:999px;background:var(--off);color:var(--grafite);font-weight:800;text-decoration:none;transition:transform .2s}
+.listen a:hover{transform:translateY(-2px)}
+.listen a svg{width:20px;height:20px}
+
+/* do que a gente fala */
+.temas{background:var(--creme)}
+.temas h2{font-size:clamp(32px,4.4vw,50px);color:var(--grafite);text-align:center}
+.tabs{position:relative;display:grid;grid-template-columns:1fr 1fr;margin:28px auto 0;background:var(--off);border-radius:999px;padding:6px;width:min(100%,380px);box-shadow:0 10px 24px -18px rgba(0,0,0,.4)}
+.tabs .pill{position:absolute;top:6px;bottom:6px;left:6px;width:calc(50% - 6px);border-radius:999px;background:var(--vinho);transition:transform .45s cubic-bezier(.2,.8,.2,1),background .45s}
+.tabs[data-k=perto] .pill{transform:translateX(100%);background:var(--oliva)}
+.tab{position:relative;z-index:1;border:0;background:transparent;border-radius:999px;padding:10px 14px;min-height:46px;font-weight:800;font-size:15px;color:var(--grafite);transition:color .3s}
+.tab[aria-selected=true]{color:var(--off)}
+.tabs[data-k=perto] .tab[aria-selected=true]{color:var(--grafite)}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:1080px;margin:34px auto 0;align-items:start}
+.card{background:var(--off);border-radius:26px;padding:24px;display:flex;flex-direction:column;gap:14px;box-shadow:0 18px 30px -24px rgba(70,74,69,.5);transition:opacity .35s,transform .35s}
+.cards.swap .card{opacity:0;transform:translateY(10px)}
+.card .top{display:flex;align-items:center;gap:12px}
+.card .dot{flex:none;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#F6DCE4}
+.cards[data-k=perto] .card .dot{background:#E8F1DC}
+.card .dot svg{width:22px;height:22px}
+.card h3{font-size:21px;color:var(--grafite);line-height:1.15}
+.card .cena{position:relative;margin:0;background:var(--creme);border-radius:18px 18px 18px 4px;padding:14px 16px;font-family:var(--pf);font-style:italic;font-size:17px;line-height:1.45;color:var(--vinho)}
+.cards[data-k=perto] .card .cena{background:#EEF3E2;color:#4F5B26}
+.card .cena.fala{font-style:normal}
+.card .cena.fala span{display:block}
+.card .cena.fala span+span{margin-top:6px;text-align:right;color:var(--grafite)}
+.ideia{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;max-width:760px;margin:34px auto 0;background:var(--off);border-radius:999px;padding:10px 10px 10px 22px;box-shadow:0 12px 26px -20px rgba(0,0,0,.45)}
+.ideia p{margin:0;display:flex;align-items:center;gap:12px;font-family:var(--pf);font-size:18px;line-height:1.35;color:var(--grafite)}
+.ideia p svg{flex:none;width:28px;height:28px}
+.ideia .btn{min-height:46px;padding:10px 22px}
+
+/* quem somos */
+.who{background:var(--off)}
+.who .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,6vw,80px);align-items:center}
+.pair{display:flex;justify-content:center;gap:clamp(14px,3vw,26px);padding:24px 0}
+.pol{width:min(48%,250px);aspect-ratio:3/4.15;perspective:1000px;background:none;border:0;padding:0;position:relative}
+.pol .in{position:absolute;inset:0;transition:transform .8s cubic-bezier(.2,.8,.2,1);transform-style:preserve-3d}
+.pol.flip .in{transform:rotateY(180deg)}
+.pol .face{position:absolute;inset:0;backface-visibility:hidden;background:#fff;padding:10px 10px 12px;box-shadow:0 20px 34px -20px rgba(0,0,0,.45);display:flex;flex-direction:column}
+.pol .face img{width:100%;flex:1;object-fit:cover;object-position:50% 20%;min-height:0}
+.pol .face .hand{font-size:22px;color:var(--grafite);text-align:center;margin-top:8px}
+.pol .back{transform:rotateY(180deg);background:var(--creme);padding:clamp(12px,3vw,20px) clamp(12px,3vw,18px);justify-content:center;text-align:left;overflow:hidden}
+.pol .back p{font-size:clamp(11.5px,3.1vw,15px);line-height:1.42;margin:0 0 .55em;color:var(--tinta)}
+.pol .back .hand{font-size:clamp(18px,4.6vw,24px);color:var(--vinho);text-align:left;margin:0 0 6px}
+.pol:nth-child(1){transform:rotate(-4deg)}.pol:nth-child(2){transform:rotate(3.5deg) translateY(18px)}
+.pol::before{content:"";position:absolute;top:-12px;left:50%;width:78px;height:24px;background:rgba(186,215,151,.8);transform:translateX(-50%) rotate(-3deg);z-index:3}
+.tip{text-align:center;font-family:var(--hand);font-size:19px;color:var(--rosa);margin-top:10px}
+.who h2{font-size:clamp(32px,4.4vw,48px);color:var(--grafite)}
+.who h2 b{color:var(--vinho)}
+.story{list-style:none;margin:26px 0 0;padding:0;position:relative}
+.story::before{content:"";position:absolute;left:23px;top:24px;bottom:24px;border-left:2px dashed var(--rosa);opacity:.55}
+.story li{display:grid;grid-template-columns:48px minmax(0,1fr);gap:16px;align-items:center;padding:9px 0;position:relative}
+.story .si{width:48px;height:48px;border-radius:50%;background:var(--off);border:2px solid var(--creme);display:grid;place-items:center;position:relative;z-index:1}
+.story .si svg{width:24px;height:24px}
+.story p{margin:0;font-size:17px;line-height:1.45;color:var(--tinta)}
+.story li.ask .si{background:var(--vinho);border-color:var(--vinho)}
+.story li.ask p{font-family:var(--pf);font-size:clamp(19px,2.2vw,22px);line-height:1.35;color:var(--vinho);background:var(--creme);padding:14px 18px;border-radius:18px 18px 18px 4px}
+.story li.ask small{display:block;font-family:var(--hand);font-size:19px;color:var(--rosa);margin-bottom:2px}
+.story li.end .si{background:var(--verde);border-color:var(--verde)}
+.story li.end p b{color:var(--vinho)}
+.duplas{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:clamp(18px,3vw,30px)}
+.cv{background:#fff;border:1px solid var(--creme);border-radius:24px;padding:20px;display:grid;grid-template-columns:64px minmax(0,1fr);gap:4px 16px;box-shadow:0 18px 30px -26px rgba(46,49,45,.5)}
+.cv img{width:64px;height:64px;border-radius:50%;object-fit:cover;object-position:50% 18%;grid-row:span 2;border:3px solid var(--verde)}
+.cv h3{font-family:var(--pf);font-size:21px;color:var(--grafite);margin:4px 0 0;line-height:1.15}
+.cv .crp{font-size:13px;font-weight:700;letter-spacing:.04em;color:var(--suave);align-self:start}
+.cv ul{grid-column:1/-1;list-style:none;margin:14px 0 0;padding:14px 0 0;border-top:1px dashed var(--creme);display:flex;flex-wrap:wrap;gap:8px}
+.cv li{font-size:13.5px;line-height:1.3;padding:7px 12px;border-radius:999px;background:var(--off);border:1px solid var(--creme);color:var(--tinta)}
+.cv li.pos{background:#F7E6EC;border-color:#EFCAD7;color:var(--vinho);font-weight:700}
+.cv a{grid-column:1/-1;margin-top:12px;font-weight:700;font-size:14px;color:var(--vinho);text-decoration:none;justify-self:start}
+.cv a:hover{text-decoration:underline}
+
+/* no que a gente acredita */
+.crer{background:var(--vinho);color:var(--off)}
+.crer::before{content:"";position:absolute;inset:0;background:url(assets/inicio/padrao.webp) center/320px;opacity:.12}
+.crer .wrap{position:relative}
+.crer .kick{color:var(--verde)}
+.crer h2{font-size:clamp(32px,4.4vw,50px)}
+.railbox{position:relative;margin-top:26px}
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:min(78%,300px);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:8px 9% 18px;scrollbar-width:none;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 9%,#000 91%,transparent 100%);mask-image:linear-gradient(to right,transparent 0,#000 9%,#000 91%,transparent 100%)}
+.rail::-webkit-scrollbar{display:none}
+.ctrl{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:6px}
+.ctrl button{width:46px;height:46px;border-radius:50%;border:2px solid rgba(255,254,244,.5);background:transparent;color:var(--off);display:grid;place-items:center;transition:background .2s,border-color .2s}
+.ctrl button:hover{background:var(--off);color:var(--vinho);border-color:var(--off)}
+.dots{display:flex;gap:8px}
+.dots i{width:8px;height:8px;border-radius:999px;background:rgba(255,254,244,.35);transition:width .3s,background .3s}
+.dots i.on{width:26px;background:var(--verde)}
+.crenca{scroll-snap-align:center;box-shadow:0 20px 34px -24px rgba(0,0,0,.6);transition:transform .4s,opacity .4s;border-radius:24px;padding:28px 24px;min-height:280px;display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+.crenca h3{font-size:clamp(24px,2.6vw,29px);line-height:1.15;margin:0 0 12px}
+.crenca p{margin:0;font-size:16px;line-height:1.42}
+.crenca:nth-child(1){background:var(--verde);color:var(--grafite)}
+.crenca:nth-child(2){background:var(--off);color:var(--tinta)}.crenca:nth-child(2) h3{color:var(--vinho)}
+.crenca:nth-child(3){background:var(--rosa);color:var(--off)}
+.crenca:nth-child(4){background:var(--creme);color:var(--tinta)}.crenca:nth-child(4) h3{color:var(--grafite)}
+.crenca:nth-child(5){background:var(--grafite);color:var(--off)}.crenca:nth-child(5) h3{color:var(--verde)}
+.crenca .hand{font-size:40px;line-height:1;opacity:.85}
+
+
+/* para continuar */
+.cont{background:var(--off)}
+.cont h2{font-size:clamp(32px,4.4vw,48px);color:var(--grafite);text-align:center;margin-bottom:clamp(30px,4vw,48px)}
+.duas{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:18px;max-width:1080px;margin:0 auto}
+.box{border-radius:28px;padding:clamp(26px,3.5vw,40px);position:relative;overflow:hidden}
+.box.eb{background:var(--creme);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,190px);gap:20px;align-items:center}
+.box.eb h3{font-size:clamp(26px,3vw,32px);color:var(--vinho);margin-bottom:10px}
+.box.eb p{color:var(--tinta)}
+.mini{position:relative;height:230px}
+.mini img{position:absolute;width:118px;bottom:6px;left:50%;border-radius:2px;box-shadow:0 14px 24px -12px rgba(0,0,0,.5);transform-origin:50% 100%;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.mini img:nth-child(1){transform:translateX(-95%) rotate(-12deg)}
+.mini img:nth-child(2){transform:translateX(-5%) rotate(12deg)}
+.mini img:nth-child(3){transform:translateX(-50%) translateY(-10px);z-index:2}
+.box.eb:hover .mini img:nth-child(1){transform:translateX(-105%) rotate(-16deg)}
+.box.eb:hover .mini img:nth-child(2){transform:translateX(5%) rotate(16deg)}
+.box.ev{background:var(--grafite);color:var(--off);display:flex;flex-direction:column;gap:14px}
+.box.ev .kick{color:var(--verde);margin:0}
+.box.ev h3{font-size:clamp(24px,2.8vw,30px)}
+.box.ev p{color:var(--creme);margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:rgba(255,254,244,.1);border-radius:999px;padding:6px 14px;font-weight:700;font-size:14px}
+.box.ev .btn{background:var(--verde);color:var(--grafite);align-self:flex-start;margin-top:auto}
+
+/* fale com a gente */
+.fale{background:var(--verde)}
+.fale .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(30px,5vw,64px);align-items:start}
+.fale h2{font-size:clamp(30px,4vw,44px);color:var(--grafite)}
+.fale .sub{font-size:18px;margin:16px 0 24px;color:var(--tinta)}
+.fale .btns .btn.ghost{color:var(--grafite);box-shadow:inset 0 0 0 2px var(--grafite)}
+.fale .btns .btn.ghost:hover{background:var(--grafite);color:var(--off)}
+.terapia{background:var(--off);border-radius:26px;padding:26px}
+.terapia h3{font-size:24px;color:var(--vinho);margin-bottom:8px}
+.terapia p{font-size:16px;color:var(--tinta)}
+.terapia a.p{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 0;border-top:1px solid var(--creme);text-decoration:none;font-weight:800;color:var(--grafite);min-height:44px}
+.terapia a.p span{font-weight:400;color:var(--suave)}
+.terapia a.p:hover{color:var(--vinho)}
+
+/* rodapé */
+footer{background:var(--grafite);color:var(--off);padding:56px max(5vw,20px) 40px;position:relative;overflow:hidden}
+footer .wrap{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:30px;align-items:end}
+footer .frase{font-family:var(--pf);font-size:clamp(26px,3.4vw,38px);line-height:1.2;max-width:620px}
+footer .frase b{color:var(--verde)}
+footer .tag{font-family:var(--hand);color:var(--verde);font-size:22px;margin-top:14px}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:flex-end}
+footer nav a{color:var(--creme);text-decoration:none;font-weight:700;padding:8px 0}
+footer nav a:hover{color:var(--verde)}
+footer small{display:block;margin-top:34px;color:rgba(255,254,244,.6);font-size:13px;text-align:center}
+
+@media(max-width:860px){
+  .ideia{border-radius:24px;padding:20px 22px;flex-direction:column;align-items:flex-start;gap:14px}
+  .hero .in,.who .wrap,.duplas,.fale .wrap,.duas,footer .wrap{grid-template-columns:minmax(0,1fr)}
+  .duo{max-width:360px;order:-1}
+  .eps,.cards{grid-template-columns:minmax(0,1fr)}
+  .bar nav a:not(.cta){display:none}
+  footer nav{justify-content:flex-start}
+}
+@media(max-width:520px){
+  .ep.big{flex-direction:column;align-items:flex-start}
+  .box.eb{grid-template-columns:minmax(0,1fr)}
+  .mini{height:200px}
+  .duplas{grid-template-columns:minmax(0,1fr)}
+  .story p{font-size:16px}
+  .ideia{padding:18px;align-items:stretch}
+  .ideia .btn{width:100%}
+  .hero .btns .btn{flex:1 1 auto;padding:13px 18px;white-space:nowrap}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
 
-<header class="topo wrap">
-  <a class="marca" href="#" aria-label="Nós em Nós, início">
-    <img src="assets/img/simbolo-nos.webp" alt="" width="72" height="41">
-    <span class="chinchilla">nós <span class="vinho">EM</span> nós</span>
-  </a>
-  <a class="btn btn-vinho btn-p" href="#inscricao">Quero participar</a>
-</header>
+<a class="aviso" id="aviso" href="#"></a>
 
-<main>
-  <!-- HERO -->
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-texto">
-        <p class="sobretitulo">Aula aberta e gratuita · ao vivo com Ilo &amp; Mari</p>
-        <h1>Por que vocês brigam sempre <em>pelas mesmas coisas?</em></h1>
-        <p class="lead">Começa pela louça, pelo dinheiro ou pela família, e termina sempre no mesmo lugar. Numa aula ao vivo, a gente mostra o ciclo que faz a briga voltar, o que cada um tenta proteger nele e um primeiro passo para sair.</p>
-        <ul class="chips">
-          <li>17 de novembro · terça</li>
-          <li>19h</li>
-          <li>Ao vivo pelo Google Meet</li>
-          <li>Gratuito</li>
-        </ul>
-        <a class="btn btn-verde btn-g" href="#inscricao">Quero participar</a>
-      </div>
-      <div class="hero-logo">
-        <img src="assets/img/logo-nos-em-nos.webp" alt="Logomarca Nós em Nós" width="807" height="1000">
-      </div>
-    </div>
-  </section>
-  <div class="faixa-vinho" aria-hidden="true"></div>
-
-  <!-- FRASES DA CASA -->
-  <section class="wrap secao">
-    <h2>Talvez você já tenha ouvido ou pensado algo assim aí na sua casa</h2>
-    <div class="frases">
-      <p>“Você nunca me escuta.”</p>
-      <p>“Nada do que eu faço tá bom.”</p>
-      <p>“Tudo que eu faço é pela gente, e você não vê.”</p>
-      <p>“Parece que só eu tô tentando.”</p>
-      <p>“De novo esse assunto?”</p>
-      <p>“Será que isso é normal?”</p>
-    </div>
-    <p class="destaque">Quando a mesma briga volta, quase nunca é falta de amor. É um ciclo: cada um faz o que pode para não sentir o que dói, e é justamente isso que acende a dor do outro.</p>
-  </section>
-
-  <!-- O QUE VAI ROLAR -->
-  <section class="fundo-creme">
-    <div class="wrap secao">
-      <p class="rotulo">Na aula, a gente vai conversar sobre</p>
-      <h2>A briga muda de assunto, mas o caminho é quase sempre o mesmo</h2>
-      <div class="cards">
-        <article class="card">
-          <span class="num chinchilla">01</span>
-          <h3>A briga muda de assunto, a dança é a mesma</h3>
-          <p>Toda briga tem duas camadas: o tema e o que vocês fazem enquanto discutem. Um insiste, o outro se afasta. Um sobe o tom, o outro some. É essa segunda camada que faz a conversa terminar sempre igual.</p>
-        </article>
-        <article class="card card-verde">
-          <span class="num chinchilla">02</span>
-          <h3>O que cada um tenta proteger</h3>
-          <p>Por que um “agora não” vira abandono para um, e um pedido vira controle para o outro. As sensibilidades que cada um traz da própria história e como elas se encaixam numa armadilha.</p>
-        </article>
-        <article class="card">
-          <span class="num chinchilla">03</span>
-          <h3>Vocês contra o ciclo, não um contra o outro</h3>
-          <p>Como sair do lugar de vilão e de vítima e olhar juntos para o padrão.</p>
-        </article>
-        <article class="card card-verde">
-          <span class="num chinchilla">04</span>
-          <h3>Um primeiro passo: o RTP</h3>
-          <p>O caminho que a gente desenvolveu para conversas difíceis. <strong>Reconhecer</strong> o que aconteceu, o que você sentiu e como reagiu. <strong>Treinar</strong> uma fala que descreve em vez de acusar. <strong>Planejar</strong> uma fala e uma escuta para a semana. Você sai com um primeiro passo para a próxima conversa.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- PARA QUEM -->
-  <section class="wrap secao duas-colunas">
+<section class="hero" id="topo">
+  <header class="bar">
+    <a class="mk" href="#topo">nós <span>EM</span> nós</a>
+    <nav aria-label="Navegação">
+      <a href="#podcast">Podcast</a><a href="#quem-somos">Quem somos</a><a href="#continuar">E-books e aulas</a><a href="#fale">Fale com a gente</a>
+    </nav>
+  </header>
+  <span class="giant g1" aria-hidden="true">nós</span><span class="giant g2" aria-hidden="true">em nós</span>
+  <div class="in">
     <div>
-      <p class="rotulo-chinchilla">Para quem é</p>
-      <p class="frase-grande">Para quem está cansado de ter a mesma discussão e quer entender o que acontece entre vocês, <em>em vez de só torcer para não acontecer de novo.</em></p>
+      <p class="kick">nós EM nós · Ilo e Mari</p>
+      <h1>Tem nó que <b>aperta</b>. Tem nó que <b>segura</b> a gente junto.</h1>
+      <p class="sub">Somos Ilo e Mari, psicólogos que atendem casais. No Nós em Nós, a gente conversa sobre os dois: o que sufoca e o que aproxima, aquece e dá vontade de ficar perto. Soltar o que aperta é para sobrar espaço para o resto.</p>
+      <div class="btns"><a class="btn" href="#podcast">Ouvir o podcast</a><a class="btn ghost" href="ebooks/">Conhecer os e-books</a></div>
     </div>
-    <div class="pilha">
-      <p>Serve para quem acabou de ir morar junto e estranhou a convivência, e para quem está junto há anos repetindo as mesmas brigas.</p>
-      <p>Dá para assistir sozinho ou com sua parceria. Se vierem os dois, melhor: vocês saem com a mesma conversa na cabeça.</p>
-      <div class="aviso">
-        <p class="aviso-titulo">O que a aula não é</p>
-        <p>Não é terapia de casal em grupo. Ninguém precisa falar da própria relação, e nenhum caso vai ser analisado. Se na sua relação existe violência, o caminho é buscar ajuda profissional.</p>
-      </div>
+    <div class="duo" id="duo">
+      <img fetchpriority="high" width="640" height="735" class="ph" src="assets/inicio/ilo-e-mari.webp" alt="Ilo e Mari, abraçados, sorrindo">
+      <img width="340" height="185" class="knot" src="assets/inicio/simbolo.webp" alt="" aria-hidden="true">
     </div>
-  </section>
-
-  <!-- QUEM SOMOS -->
-  <section class="fundo-creme">
-    <div class="wrap secao">
-      <p class="rotulo-chinchilla">Quem vai conversar com você</p>
-      <h2>Ilo e Mari, psicólogos que atendem casais e fazem o podcast Nós em Nós</h2>
-      <div class="pessoas">
-        <div class="pessoa">
-          <img src="assets/img/ilo.webp" alt="Francisco Ilo" width="480" height="720" loading="lazy" style="object-position: 50% 20%">
-          <div>
-            <h3>Francisco Ilo</h3>
-            <p>Psicólogo clínico (CRP 11/17085), especialista em Terapia de Aceitação e Compromisso (ACT). Atende indivíduos e casais em Fortaleza.</p>
-          </div>
-        </div>
-        <div class="pessoa">
-          <img src="assets/img/mari.webp" alt="Mariana Virgínio" width="480" height="720" loading="lazy" style="object-position: 50% 30%">
-          <div>
-            <h3>Mariana Virgínio</h3>
-            <p>Psicóloga formada pela UFC (CRP 11/11809), especialista em Psicoterapia Analítica Funcional (FAP). Atende indivíduos e casais.</p>
-          </div>
-        </div>
-      </div>
-      <p class="citacao">A Mari diz que o Ilo é o lado poético da dupla, e ela, o prático. Na aula vocês vão ver os dois.</p>
-    </div>
-  </section>
-
-  <!-- INSCRIÇÃO -->
-  <section id="inscricao" class="inscricao">
-    <div class="wrap secao duas-colunas">
-      <div>
-        <h2>Garanta seu lugar na conversa</h2>
-        <p>Terça, 17 de novembro, às 19h, ao vivo pelo Google Meet. É gratuito.</p>
-        <p>Depois da inscrição, você entra no grupo de WhatsApp da aula, onde chegam o link e os lembretes. No grupo a gente também conta o que vem por aí.</p>
-        <p>As duas últimas perguntas são opcionais, mas é com elas que a gente prepara os exemplos da aula.</p>
-        <ul class="chips chips-vinho">
-          <li>17/11 · terça</li>
-          <li>19h</li>
-          <li>Google Meet</li>
-        </ul>
-      </div>
-
-      <div class="form-caixa">
-        <form id="form-inscricao" novalidate>
-          <div class="campo">
-            <label for="f-nome">Seu nome</label>
-            <input id="f-nome" name="nome" type="text" autocomplete="name" required maxlength="120">
-            <span class="erro" data-erro="nome">Conta pra gente como você se chama.</span>
-          </div>
-          <div class="campo">
-            <label for="f-whatsapp">WhatsApp <span class="opcional">(com DDD)</span></label>
-            <input id="f-whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(85) 99999-9999" required maxlength="20">
-            <span class="erro" data-erro="whatsapp">Confira o número, com DDD.</span>
-          </div>
-          <div class="campo">
-            <label for="f-tempo">Há quanto tempo vocês estão juntos? Já moram juntos?</label>
-            <input id="f-tempo" name="tempo_juntos" type="text" required maxlength="200">
-            <span class="erro" data-erro="tempo_juntos">Essa ajuda a gente a preparar a aula.</span>
-          </div>
-          <div class="campo">
-            <label for="f-briga">Qual é a briga que mais se repete aí? <span class="opcional">(opcional)</span></label>
-            <textarea id="f-briga" name="briga" rows="3" maxlength="1500"></textarea>
-          </div>
-          <div class="campo">
-            <label for="f-tentou">O que vocês já tentaram fazer com ela? <span class="opcional">(opcional)</span></label>
-            <textarea id="f-tentou" name="ja_tentaram" rows="3" maxlength="1500"></textarea>
-          </div>
-          <!-- campo invisível contra robôs: pessoas não preenchem -->
-          <div class="armadilha" aria-hidden="true">
-            <label for="f-site">Site</label>
-            <input id="f-site" name="site" type="text" tabindex="-1" autocomplete="off">
-          </div>
-          <button class="btn btn-vinho btn-g btn-bloco" type="submit">Quero participar</button>
-          <p class="miudo">Suas respostas são usadas só para preparar a aula e para enviar o link e os lembretes pelo WhatsApp.</p>
-          <p class="form-status" role="status" aria-live="polite"></p>
-        </form>
-
-        <div id="obrigado" class="obrigado" hidden tabindex="-1">
-          <img src="assets/img/simbolo-nos.webp" alt="" width="96" height="54">
-          <h3>Inscrição feita!</h3>
-          <p id="obrigado-texto">Agora entre no grupo de WhatsApp da aula. É por lá que chegam o link e os lembretes.</p>
-          <a id="obrigado-whatsapp" class="btn btn-vinho btn-g btn-bloco" href="#" hidden>Entrar no grupo do WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="rodape">
-  <div class="wrap rodape-linha">
-    <span class="chinchilla">nós <span class="verde">EM</span> nós · Ilo &amp; Mari</span>
-    <span class="redes" id="redes"></span>
   </div>
+</section>
+
+<section class="band pod" id="podcast">
+  <div class="wrap">
+    <p class="kick rv">o podcast</p>
+    <h2 class="rv">Para não deixar o <b>amor</b> ser esquecido pelo <b>cansaço</b></h2>
+    <p class="lead rv d1">No Nós em Nós, Ilo e Mari conversam sobre a vida juntos: as brigas que se repetem, as diferenças e o que faz a gente se aproximar ou se afastar de quem ama.</p>
+    <div class="status rv d1"><i></i><span id="podStatus"></span></div>
+    <div class="eps" id="eps"></div>
+    <div class="listen rv">
+      <a href="https://open.spotify.com/show/5mqyyZydkZNV7lE8CslRGB" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#1DB954" aria-hidden="true"><circle cx="12" cy="12" r="11"/><path d="M6.5 9.4c3.7-1.1 8.1-.7 11.2 1.1M7.3 12.5c3-.9 6.5-.6 9 .9M8 15.3c2.4-.6 4.9-.4 6.9.8" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>Ouvir no Spotify</a>
+      <a href="https://podcasts.apple.com/us/podcast/n%C3%B3s-em-n%C3%B3s/id1830708381" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#9933CC"/><circle cx="12" cy="10" r="2.4" fill="#fff"/><path d="M12 13.5v6M7.5 13.8a5.5 5.5 0 1 1 9 0" stroke="#fff" stroke-width="1.7" fill="none" stroke-linecap="round"/></svg>Ouvir no Apple Podcasts</a>
+    </div>
+  </div>
+</section>
+
+<section class="band temas">
+  <div class="wrap">
+    <h2 class="rv">Conversas que a gente sempre volta a ter</h2>
+    <div class="tabs rv d1" id="tabs" data-k="aperta" role="tablist" aria-label="Temas">
+      <span class="pill" aria-hidden="true"></span>
+      <button class="tab" role="tab" aria-selected="true" data-k="aperta">O que aperta</button>
+      <button class="tab" role="tab" aria-selected="false" data-k="perto">O que aproxima</button>
+    </div>
+    <div class="cards" id="cards" data-k="aperta" role="tabpanel" aria-live="polite"></div>
+    <div class="ideia rv"><p><svg viewBox="0 0 24 24" fill="none" stroke="#C75077" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 11h.01M12 11h.01M15.5 11h.01"/></svg>Tem um tema que você queria ouvir a gente conversando?</p><a class="btn" href="#fale">Manda pra gente</a></div>
+  </div>
+</section>
+
+<section class="band who" id="quem-somos">
+  <div class="wrap">
+    <div class="rv">
+      <div class="pair">
+        <button class="pol" type="button" aria-pressed="false" aria-label="Virar a foto do Ilo">
+          <span class="in">
+            <span class="face"><img loading="lazy" decoding="async" width="480" height="720" src="assets/inicio/ilo.webp" alt="Ilo"><span class="hand">Ilo</span></span>
+            <span class="face back"><span class="hand">Sou o Ilo.</span><p>Cresci em Paraipaba e moro em Fortaleza desde 2016. Sou o caçula de três irmãos.</p><p>Gosto de anime, música triste, praia e passar tempo com meus amigos jogando jogos de tabuleiro.</p></span>
+          </span>
+        </button>
+        <button class="pol" type="button" aria-pressed="false" aria-label="Virar a foto da Mari">
+          <span class="in">
+            <span class="face"><img loading="lazy" decoding="async" width="480" height="720" src="assets/inicio/mari.webp" alt="Mari"><span class="hand">Mari</span></span>
+            <span class="face back"><span class="hand">Sou a Mari.</span><p>Nasci e cresci em Aracati e moro em Fortaleza desde 2010. Sou a caçula de três irmãos e a única mulher.</p><p>Gosto de praia, futebol, pagode e de passar tempo com a minha família e minhas amigas.</p></span>
+          </span>
+        </button>
+      </div>
+      <p class="tip">toque nas fotos :)</p>
+    </div>
+    <div class="txt rv d1">
+      <p class="kick">quem somos</p>
+      <h2>Dois amigos que não <b>pararam de conversar</b></h2>
+      <ol class="story">
+        <li><span class="si"><svg stroke="#8F0835" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18v-5a3 3 0 013-3h10a3 3 0 013 3v5"/><path d="M2 18h20M6 10V7a2 2 0 012-2h8a2 2 0 012 2v3"/></svg></span><p>Somos amigos e psicólogos que atendem casais.</p></li>
+        <li><span class="si"><svg stroke="#8F0835" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 01-11.6 7.1L4 20l1-4.6A8 8 0 1121 12z"/></svg></span><p>Entre uma sessão e outra, a gente continuava conversando.</p></li>
+        <li class="ask"><span class="si"><svg viewBox="0 0 24 24" fill="none" stroke="#FFFEF4" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M9 9a3 3 0 115 2.2c-1.2.8-2 1.5-2 2.8"/><circle cx="12" cy="18" r=".6" fill="#FFFEF4"/></svg></span><p><small>a pergunta que fica no consultório</small>Como teria sido se esse casal tivesse chegado antes?</p></li>
+        <li class="end"><span class="si"><img loading="lazy" decoding="async" width="340" height="185" src="assets/inicio/simbolo.webp" alt="" style="width:26px;height:26px;object-fit:contain"></span><p>Daí veio o <b>Nós em Nós</b>: levar essas conversas para mais gente, mais cedo.</p></li>
+      </ol>
+    </div>
+    <div class="duplas rv">
+      <div class="cv">
+        <img loading="lazy" decoding="async" width="480" height="720" src="assets/inicio/ilo.webp" alt="">
+        <h3>Francisco Ilo</h3>
+        <span class="crp">CRP 11/17085</span>
+        <ul><li class="pos">Pós-graduação em Terapia de Aceitação e Compromisso</li><li>Formação em Terapia Comportamental Integrativa de Casais</li><li>Formação em Terapia Sexual</li></ul>
+        <a href="https://franciscoilo.com" target="_blank" rel="noopener">franciscoilo.com →</a>
+      </div>
+      <div class="cv">
+        <img loading="lazy" decoding="async" width="480" height="720" src="assets/inicio/mari.webp" alt="">
+        <h3>Mariana Virgínio</h3>
+        <span class="crp">CRP 11/11809</span>
+        <ul><li class="pos">Especialização em Terapia Analítico-Comportamental</li><li class="pos">Especialização em Psicoterapia Analítica Funcional</li><li>Formação em ACT</li><li>Formação em Terapia de Casal</li></ul>
+        <a href="https://psimarivirginio.com.br" target="_blank" rel="noopener">psimarivirginio.com.br →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band crer">
+  <div class="wrap">
+    <p class="kick rv">no que a gente acredita</p>
+    <h2 class="rv">Nem todo nó é para desatar</h2>
+    <div class="railbox">
+    <div class="rail" id="rail" tabindex="0" aria-label="No que a gente acredita">
+      <article class="crenca"><span class="hand">01</span><div><h3>Nem todo nó é para desatar.</h3><p>Alguns são o que mantém vocês juntos, perto, aquecidos.</p></div></article>
+      <article class="crenca"><span class="hand">02</span><div><h3>Amor também se cultiva.</h3><p>No desejo, na admiração, no gosto pelas coisas do outro, no prazer de estar junto.</p></div></article>
+      <article class="crenca"><span class="hand">03</span><div><h3>A gente não vai te dar mais uma regra.</h3><p>Conselho que serve para todo casal não conhece o seu.</p></div></article>
+      <article class="crenca"><span class="hand">04</span><div><h3>Diferença não é defeito a corrigir.</h3><p>É algo para conhecer, e às vezes é justamente o que encanta.</p></div></article>
+      <article class="crenca"><span class="hand">05</span><div><h3>Dá para ter uma vida a dois sem deixar de ter uma vida sua.</h3><p>Intimidade e individualidade cabem na mesma casa.</p></div></article>
+    </div>
+    <div class="ctrl"><button type="button" id="prev" aria-label="Anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button><span class="dots" id="dots"></span><button type="button" id="next" aria-label="Próximo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button></div>
+    </div>
+  </div>
+</section>
+
+<section class="band cont" id="continuar">
+  <h2 class="rv">Para continuar a conversa</h2>
+  <div class="duas">
+    <a class="box eb rv" href="ebooks/" style="text-decoration:none">
+      <div>
+        <p class="kick">e-books</p>
+        <h3>Três e-books para olhar a relação com calma</h3>
+        <p>De onde vocês vieram, onde estão e o que querem cultivar.</p>
+        <span class="btn">Ver os e-books · R$59,90</span>
+      </div>
+      <div class="mini" aria-hidden="true"><img loading="lazy" decoding="async" width="320" height="452" src="assets/inicio/capa-mapa.webp" alt=""><img loading="lazy" decoding="async" width="320" height="452" src="assets/inicio/capa-toques.webp" alt=""><img loading="lazy" decoding="async" width="320" height="452" src="assets/inicio/capa-diagnostico.webp" alt=""></div>
+    </a>
+    <div class="box ev rv d1" id="evento"></div>
+  </div>
+</section>
+
+<section class="band fale" id="fale">
+  <div class="wrap">
+    <div class="rv">
+      <p class="kick">fale com a gente</p>
+      <h2>Tem um tema que você queria ouvir a gente conversando?</h2>
+      <p class="sub">Manda pra gente. Muitos episódios nasceram de uma pergunta assim.</p>
+      <div class="btns">
+        <a class="btn" href="https://www.instagram.com/soltando.nos/" target="_blank" rel="noopener">Instagram @soltando.nos</a>
+        <a class="btn ghost" href="mailto:infoprodutosmarieilo@gmail.com">infoprodutosmarieilo@gmail.com</a>
+      </div>
+    </div>
+    <div class="terapia rv d1">
+      <h3>Procurando terapia?</h3>
+      <p>O Nós em Nós não é atendimento, mas cada um de nós atende.</p>
+      <a class="p" href="https://franciscoilo.com" target="_blank" rel="noopener">Ilo <span>franciscoilo.com →</span></a>
+      <a class="p" href="https://psimarivirginio.com.br" target="_blank" rel="noopener">Mari <span>psimarivirginio.com.br →</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p class="frase">Para não deixar o <b>amor</b> ser esquecido pelo <b>cansaço</b>.</p>
+      <p class="tag">soltando os nós do seu relacionamento.</p>
+    </div>
+    <nav aria-label="Rodapé"><a href="#podcast">Podcast</a><a href="ebooks/">E-books</a><a href="#continuar">Aulas</a><a href="https://www.instagram.com/soltando.nos/" target="_blank" rel="noopener">Instagram</a><a href="#fale">Contato</a></nav>
+  </div>
+  <small>Nós em Nós · Ilo e Mari · O conteúdo do podcast, dos e-books e das aulas não substitui terapia.</small>
 </footer>
 
-<script src="config.js"></script>
-<script src="assets/js/inscricao.js"></script>
+<script>
+{
+  /* ====== O QUE MUDA COM A FASE: edite só aqui ======
+     podcast: "entre" | "anunciada" | "noar" | "encerrada"
+     evento:  "aula" | "embreve"
+     aula.ate: depois desse horário a faixa do topo some e o quadro da aula vira "próximos encontros" sozinho */
+  const CONFIG = {
+    aviso: { texto: 'Aula aberta e gratuita · 17/11, 19h · <span>Quero participar →</span>', link: 'aula/' },
+    podcast: 'anunciada',
+    temporada: { nome: 'Terceira temporada', quando: 'em dezembro, às quartas' },
+    ultimo: { titulo: '', resumo: '', link: 'https://open.spotify.com/show/5mqyyZydkZNV7lE8CslRGB' },
+    evento: 'aula',
+    aula: { ate: '2026-11-17T21:00:00-03:00', titulo: 'Por que vocês brigam sempre pelas mesmas coisas?', chips: ['17 de novembro · terça', '19h', 'Google Meet', 'Gratuita'], link: 'aula/' }
+  };
+
+  const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* aula vencida: some a faixa e o quadro volta para "próximos encontros" */
+  if (CONFIG.aula && CONFIG.aula.ate && Date.now() > Date.parse(CONFIG.aula.ate)) {
+    if (CONFIG.evento === 'aula') CONFIG.evento = 'embreve';
+    if (CONFIG.aviso && CONFIG.aviso.link === CONFIG.aula.link) CONFIG.aviso = null;
+  }
+
+  /* faixa */
+  const av = $('#aviso');
+  if (CONFIG.aviso && CONFIG.aviso.texto) { av.innerHTML = CONFIG.aviso.texto; av.href = CONFIG.aviso.link; } else av.remove();
+
+  /* podcast */
+  const ICON = {
+    loop: '<svg viewBox="0 0 40 40" fill="none" stroke="#8F0835" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14c-5 0-8 3-8 6s3 6 8 6c6 0 10-12 16-12 5 0 8 3 8 6s-3 6-8 6c-6 0-10-12-16-12z"/><path d="M28 11l3 3-3 3"/></svg>',
+    forte: '<svg viewBox="0 0 40 40" fill="none" stroke="#5E6B2E" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><circle cx="15" cy="20" r="9"/><circle cx="25" cy="20" r="9"/><path d="M20 12.6c-2 2-3 4.6-3 7.4s1 5.4 3 7.4" stroke="#BAD797" stroke-width="3.4"/></svg>',
+    papeis: '<svg viewBox="0 0 40 40" fill="none" stroke="#464A45" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7h15l7 7v19H9z"/><path d="M24 7v7h7"/><path d="M14 19h12M14 24h12M14 29h7"/><path d="M5 12v20" stroke="#C75077"/></svg>'
+  };
+  const COMECE = [
+    { n: 'para começar', ic: 'loop', t: 'Brigas em looping', p: 'Por que a mesma briga volta, e o que cada um faz enquanto discute.' },
+    { n: 'para começar', ic: 'forte', t: 'O que nos torna um casal mais forte?', p: 'Forte não é só quem sobrevive à parte ruim: é olhar de frente as dificuldades e também o que vocês têm de bom.' },
+    { n: 'para começar', ic: 'papeis', t: 'Papéis de gênero', p: 'Os roteiros que cada um herdou e que viram cobrança quando ninguém combinou.' }
+  ];
+  const T = CONFIG.temporada;
+  const STATUS = {
+    entre: 'Entre uma temporada e outra · comece por estes',
+    anunciada: `${T.nome} ${T.quando} · enquanto isso, comece por estes`,
+    noar: `${T.nome} no ar · episódio novo toda quarta`,
+    encerrada: `${T.nome} completa · ouça do começo`
+  };
+  $('#podStatus').textContent = STATUS[CONFIG.podcast];
+  let eps = COMECE.map(e => `<a class="ep" href="${CONFIG.ultimo.link}" target="_blank" rel="noopener"><span class="ic">${ICON[e.ic]}</span><span class="n">${e.n}</span><h3>${e.t}</h3><p>${e.p}</p><span class="go">Ouvir episódio<b><svg width="16" height="16" viewBox="0 0 24 24" fill="#FFFEF4" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></b></span></a>`).join('');
+  if (CONFIG.podcast === 'noar' && CONFIG.ultimo.titulo) {
+    eps = `<a class="ep big" href="${CONFIG.ultimo.link}" target="_blank" rel="noopener"><span class="play"><svg width="26" height="26" viewBox="0 0 24 24" fill="#FFFEF4" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span><span><span class="n hand" style="color:var(--vinho);font-size:20px">episódio mais recente</span><h3>${CONFIG.ultimo.titulo}</h3><p>${CONFIG.ultimo.resumo}</p></span></a>` + eps;
+  }
+  $('#eps').innerHTML = eps;
+
+  /* temas */
+  const TEMAS = {
+    aperta: [
+      { t: 'Quando toda conversa vira defesa', c: '<span>“Isso me machucou.”</span><span>“Mas não foi a minha intenção.”</span>', fala: true },
+      { t: 'A briga que muda de assunto e termina igual', c: 'Começa pela louça, pelo dinheiro ou pela família, e acaba sempre no mesmo lugar.' },
+      { t: 'Quando a casa vira alojamento', c: 'Vocês dividem a casa, as contas e a agenda. E a conversa?' }
+    ],
+    perto: [
+      { t: 'Gosto de ver você gostar das coisas', c: 'O jeito como o outro fala do que ama também é um jeito de amar.' },
+      { t: 'Que espaço sobra para o seu prazer?', c: 'O desejo não acaba com a rotina, mas às vezes precisa ser procurado.' },
+      { t: 'Escolher um ao outro, de novo', c: 'No meio da semana, sem data especial, sem plateia.' }
+    ]
+  };
+  const cards = $('#cards');
+  const DOT = { aperta: '<svg viewBox="0 0 24 24" fill="none" stroke="#8F0835" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 12c3-5 7 5 10 0s5-5 6 0"/><path d="M4 16c3-5 7 5 10 0s5-5 6 0" opacity=".5"/></svg>', perto: '<svg viewBox="0 0 24 24" fill="none" stroke="#5E6B2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>' };
+  const draw = k => { cards.dataset.k = k; cards.innerHTML = TEMAS[k].map(x => `<article class="card"><div class="top"><span class="dot">${DOT[k]}</span><h3>${x.t}</h3></div><p class="cena${x.fala ? ' fala' : ''}">${x.c}</p></article>`).join(''); };
+  draw('aperta');
+  $$('.tab').forEach(b => b.addEventListener('click', () => {
+    $$('.tab').forEach(o => o.setAttribute('aria-selected', o === b));
+    $('#tabs').dataset.k = b.dataset.k;
+    cards.classList.add('swap');
+    setTimeout(() => { draw(b.dataset.k); cards.classList.remove('swap'); }, still ? 0 : 220);
+  }));
+
+  /* polaroides */
+  $$('.pol').forEach(p => p.addEventListener('click', () => { const f = p.classList.toggle('flip'); p.setAttribute('aria-pressed', f); }));
+
+  /* evento */
+  const ev = $('#evento');
+  if (CONFIG.evento === 'aula') {
+    const a = CONFIG.aula;
+    ev.innerHTML = `<p class="kick">aula aberta e gratuita</p><h3>${a.titulo}</h3><div class="chips">${a.chips.map(c => `<span>${c}</span>`).join('')}</div><a class="btn" href="${a.link}">Quero participar</a>`;
+  } else {
+    ev.innerHTML = `<p class="kick">próximos encontros</p><h3>Os próximos encontros saem primeiro no Instagram</h3><p>Aulas, conversas ao vivo e o que mais vier.</p><a class="btn" href="https://www.instagram.com/soltando.nos/" target="_blank" rel="noopener">Seguir @soltando.nos</a>`;
+  }
+
+  /* crenças */
+  const rail = $('#rail'), cr = $$('.crenca'), dots = $('#dots');
+  dots.innerHTML = cr.map(() => '<i></i>').join('');
+  const di = [...dots.children];
+  const cur = () => { const mid = rail.scrollLeft + rail.clientWidth / 2; let best = 0, bd = 1e9; cr.forEach((c, i) => { const d = Math.abs(c.offsetLeft + c.offsetWidth / 2 - mid); if (d < bd) { bd = d; best = i; } }); return best; };
+  const mark = () => { const k = cur(); di.forEach((d, i) => d.classList.toggle('on', i === k)); };
+  const go = i => { const c = cr[Math.max(0, Math.min(cr.length - 1, i))]; rail.scrollTo({ left: c.offsetLeft + c.offsetWidth / 2 - rail.clientWidth / 2 }); };
+  $('#prev').addEventListener('click', () => go(cur() - 1));
+  $('#next').addEventListener('click', () => go(cur() + 1));
+  rail.addEventListener('scroll', () => requestAnimationFrame(mark), { passive: true });
+  mark();
+
+  /* entrada */
+  setTimeout(() => $('#duo').classList.add('open'), still ? 0 : 200);
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .15 });
+  $$('.rv').forEach(el => io.observe(el));
+}
+</script>
 </body>
 </html>
