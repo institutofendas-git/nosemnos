@@ -441,12 +441,12 @@ footer small{display:block;margin-top:34px;color:rgba(255,254,244,.6);font-size:
      evento:  "aula" | "embreve"
      aula.ate: depois desse horário a faixa do topo some e o quadro da aula vira "próximos encontros" sozinho */
   const CONFIG = {
-    aviso: { texto: 'Aula aberta e gratuita · 17/11, 19h · <span>Quero participar →</span>', link: 'aula/' },
+    aviso: null,
     podcast: 'anunciada',
     temporada: { nome: 'Terceira temporada', quando: 'em dezembro, às quartas' },
     ultimo: { titulo: '', resumo: '', link: 'https://open.spotify.com/show/5mqyyZydkZNV7lE8CslRGB' },
-    evento: 'aula',
-    aula: { ate: '2026-11-17T21:00:00-03:00', titulo: 'Por que vocês brigam sempre pelas mesmas coisas?', chips: ['17 de novembro · terça', '19h', 'Google Meet', 'Gratuita'], link: 'aula/' }
+    evento: 'embreve',
+    aula: { ate: '2026-11-17T18:00:00-03:00', titulo: 'Por que vocês brigam sempre pelas mesmas coisas?', chips: ['17 de novembro · terça', '19h', 'Google Meet', 'Gratuita'], link: 'aula/' }
   };
 
   const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
