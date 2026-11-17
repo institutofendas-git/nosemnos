@@ -37,7 +37,7 @@
     <img src="../assets/img/simbolo-nos.webp" alt="" width="72" height="41">
     <span class="chinchilla">nós <span class="vinho">EM</span> nós</span>
   </a>
-  <a class="btn btn-vinho btn-p" href="#inscricao">Quero participar</a>
+  <button class="btn btn-vinho btn-p" type="button" disabled aria-disabled="true">Inscrições encerradas</button>
 </header>
 
 <main>
@@ -54,7 +54,7 @@
           <li>Ao vivo pelo Google Meet</li>
           <li>Gratuito</li>
         </ul>
-        <a class="btn btn-verde btn-g" href="#inscricao">Quero participar</a>
+        <button class="btn btn-verde btn-g" type="button" disabled aria-disabled="true">Inscrições encerradas</button>
       </div>
       <div class="hero-logo">
         <img src="../assets/img/logo-nos-em-nos.webp" alt="Logomarca Nós em Nós" width="807" height="1000">
@@ -152,58 +152,10 @@
   <section id="inscricao" class="inscricao">
     <div class="wrap secao duas-colunas">
       <div>
-        <h2>Garanta seu lugar na conversa</h2>
-        <p>Terça, 17 de novembro, às 19h, ao vivo pelo Google Meet. É gratuito.</p>
-        <p>Depois da inscrição, você entra no grupo de WhatsApp da aula, onde chegam o link e os lembretes. No grupo a gente também conta o que vem por aí.</p>
-        <p>As duas últimas perguntas são opcionais, mas é com elas que a gente prepara os exemplos da aula.</p>
-        <ul class="chips chips-vinho">
-          <li>17/11 · terça</li>
-          <li>19h</li>
-          <li>Google Meet</li>
-        </ul>
-      </div>
-
-      <div class="form-caixa">
-        <form id="form-inscricao" novalidate>
-          <div class="campo">
-            <label for="f-nome">Seu nome</label>
-            <input id="f-nome" name="nome" type="text" autocomplete="name" required maxlength="120">
-            <span class="erro" data-erro="nome">Conta pra gente como você se chama.</span>
-          </div>
-          <div class="campo">
-            <label for="f-whatsapp">WhatsApp <span class="opcional">(com DDD)</span></label>
-            <input id="f-whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(85) 99999-9999" required maxlength="20">
-            <span class="erro" data-erro="whatsapp">Confira o número, com DDD.</span>
-          </div>
-          <div class="campo">
-            <label for="f-tempo">Há quanto tempo vocês estão juntos? Já moram juntos?</label>
-            <input id="f-tempo" name="tempo_juntos" type="text" required maxlength="200">
-            <span class="erro" data-erro="tempo_juntos">Essa ajuda a gente a preparar a aula.</span>
-          </div>
-          <div class="campo">
-            <label for="f-briga">Qual é a briga que mais se repete aí? <span class="opcional">(opcional)</span></label>
-            <textarea id="f-briga" name="briga" rows="3" maxlength="1500"></textarea>
-          </div>
-          <div class="campo">
-            <label for="f-tentou">O que vocês já tentaram fazer com ela? <span class="opcional">(opcional)</span></label>
-            <textarea id="f-tentou" name="ja_tentaram" rows="3" maxlength="1500"></textarea>
-          </div>
-          <!-- campo invisível contra robôs: pessoas não preenchem -->
-          <div class="armadilha" aria-hidden="true">
-            <label for="f-site">Site</label>
-            <input id="f-site" name="site" type="text" tabindex="-1" autocomplete="off">
-          </div>
-          <button class="btn btn-vinho btn-g btn-bloco" type="submit">Quero participar</button>
-          <p class="miudo">Suas respostas são usadas só para preparar a aula e para enviar o link e os lembretes pelo WhatsApp.</p>
-          <p class="form-status" role="status" aria-live="polite"></p>
-        </form>
-
-        <div id="obrigado" class="obrigado" hidden tabindex="-1">
-          <img src="../assets/img/simbolo-nos.webp" alt="" width="96" height="54">
-          <h3>Inscrição feita!</h3>
-          <p id="obrigado-texto">Agora entre no grupo de WhatsApp da aula. É por lá que chegam o link e os lembretes.</p>
-          <a id="obrigado-whatsapp" class="btn btn-vinho btn-g btn-bloco" href="#" hidden>Entrar no grupo do WhatsApp</a>
-        </div>
+        <h2>Inscrições encerradas</h2>
+        <p>A aula de 17 de novembro já aconteceu. Obrigado por estar com a gente!</p>
+        <p>Acompanhe o Nós em Nós para saber dos próximos encontros.</p>
+        <a class="btn btn-vinho btn-g" href="/">Ir para a página inicial</a>
       </div>
     </div>
   </section>
@@ -212,11 +164,10 @@
 <footer class="rodape">
   <div class="wrap rodape-linha">
     <a class="chinchilla" href="/" style="color:inherit;text-decoration:none">nós <span class="verde">EM</span> nós · Ilo &amp; Mari</a>
-    <span class="redes" id="redes"></span>
+    <span class="redes" id="redes"><a href="https://instagram.com/soltando.nos" target="_blank" rel="noopener">@soltando.nos</a></span>
   </div>
 </footer>
 
-<script src="../config.js"></script>
-<script src="../assets/js/inscricao.js"></script>
+
 </body>
 </html>
